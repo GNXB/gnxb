@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400,700');
+@import 'utils';
+
+$yellow: #ffbc00;
+$light-gray: #eceeef;
+
+body {
+    font-family: 'Helvetica Neue';
+}
+
+.navbar-brand {
+    background-image: url('/img/GNXB-Columberg.svg');
+    background-size: cover;
+    width: 212px;
+    height: 38px;
+}
+
+.banner-bg {
+    background: linear-gradient(180deg, #fbfbfb 0%, $yellow 100%) repeat-x $yellow;
+    position: relative;
+    height: 400px;
+}
+
+.banner-filter {
+    @extend .outerflow;
+    content: '';
+    background: linear-gradient(180deg, transparent 0, rgba(255, 255, 255, 0.6) 100%);
+    box-shadow: inset 0 -50px 200px rgba(0, 0, 0, 0.8);
+}
+
+.banner-crop {
+    height: 100px;
+    overflow: hidden;
+}
+
+section {
+    margin: 20px 0;
+
+    &.highlight {
+        background-color: $light-gray;
+    }
+}
+
+footer {
+    // font-family: "Droid Serif";
+
+    nav {
+        background: none;
+
+        ul {
+            margin-left: 15px;
+
+            li {
+                a.nav-link-edit {
+                    color: #888;
+                    padding-top: 0.625rem !important;
+                    font-size: 0.8rem;
+
+                    &:hover {
+                        color: #666;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    address {
+        margin-left: 15px;
+        font-size: 0.8rem;
+    }
+}
+
+.label_box {
+    /*position: relative;
+    display: inline-block;
+    padding: 7px 7px 20px;
+    color: #c5c5c5;
+    font-size: 44px;
+    font-family: "Cardo";
+    line-height: 37px;
+    text-align: justify;
+    text-align-last: justify;
+    border: 3px solid #cccccc;
+    word-break: break-word;*/
+
+    position: relative;
+    display: inline-block;
+    margin: 20px 0;
+    padding: 2px 10px;
+    color: #6d6d6d;
+    font-size: 20px;
+    font-weight: lighter;
+    border: 1px solid;
+}
+
+.mountain {
+    @extend .outerflow;
+    top: auto;
+    width: 0;
+    height: 0;
+}
+
+
+.main-content {
+    background: #fff;
+    min-height: 300px;
+    // box-shadow: 0 0 15px #000;
+}
+
+
+@import 'home';
+@import 'portfolio';

@@ -1,0 +1,19 @@
+// @font-face {
+//     font-family: "Cardo";
+//     src: url('./font/Cardo-Regular.ttf')
+// }
+
+.outerflow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+// @mixin triangle($color, $width, $height) {
+//     border: solid;
+//     border-width: 0 $width $height $width;
+//     border-color: transparent transparent $color transparent;
+// }

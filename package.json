@@ -1,0 +1,18 @@
+{
+  "name": "gnxb",
+  "version": "0.0.1",
+  "description": "GNXB Official Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "GNXB"
+  ],
+  "author": "Apiwith Potisuk",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "jade": "^1.11.0"
+  }
+}
